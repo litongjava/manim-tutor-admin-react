@@ -28,7 +28,7 @@ export const ef_llm_usage_columns = (): ProColumns<any>[] => [
   },
   {
     "title": "messages",
-    "dataIndex": "std_err",
+    "dataIndex": "messages",
     "valueType": "textarea",
     ellipsis:true,
     copyable: true,
