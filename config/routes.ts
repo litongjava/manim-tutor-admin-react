@@ -24,10 +24,16 @@ export default [
         component: './Welcome',
       },
       {
-        path: 'ef_manin_sence_code_columns',
+        path: 'ef_manin_sence_code',
         layout: false,
-        name: 'ef_manin_sence_code_columns',
+        name: 'ef_manin_sence_code',
         component: './app/ef_manin_sence_code/ef_manin_sence_code_index',
+      },
+      {
+        path: 'ef_llm_usage',
+        layout: false,
+        name: 'ef_llm_usage',
+        component: './app/ef_llm_usage/ef_llm_usage_index',
       },
     ]
   },
