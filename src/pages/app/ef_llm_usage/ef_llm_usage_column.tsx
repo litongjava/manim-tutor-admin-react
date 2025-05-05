@@ -9,7 +9,9 @@ export const ef_llm_usage_columns = (): ProColumns<any>[] => [
   {
     "title": "group_name",
     "dataIndex": "group_name",
-    "valueType": "text"
+    "valueType": "text",
+    ellipsis:true,
+    copyable: true,
   },
   {
     "title": "task_id",
