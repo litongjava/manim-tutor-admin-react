@@ -4,7 +4,9 @@ export const ef_manin_sence_code_columns = (): ProColumns<any>[] => [
   {
     "title": "topic",
     "dataIndex": "topic",
-    "valueType": "text"
+    "valueType": "text",
+    ellipsis:true,
+    copyable: true,
   },
   {
     "title": "sence",
