@@ -2,6 +2,11 @@ import {ProColumns} from '@ant-design/pro-components';
 
 export const ef_manin_sence_code_columns = (): ProColumns<any>[] => [
   {
+    "title": "group_id",
+    "dataIndex": "group_id",
+    "valueType": "text"
+  },
+  {
     "title": "topic",
     "dataIndex": "topic",
     "valueType": "text",
