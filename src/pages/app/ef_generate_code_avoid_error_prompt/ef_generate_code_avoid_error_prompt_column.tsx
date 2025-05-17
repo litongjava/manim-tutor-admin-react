@@ -29,13 +29,6 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
     copyable: true,
   },
   {
-    "title": "prompt",
-    "dataIndex": "prompt",
-    "valueType": "textarea",
-    ellipsis:true,
-    copyable: true,
-  },
-  {
     "title": "std_err",
     "dataIndex": "std_err",
     "valueType": "textarea",
