@@ -35,6 +35,12 @@ export default [
         name: 'ef_llm_usage',
         component: './app/ef_llm_usage/ef_llm_usage_index',
       },
+      {
+        path: 'ef_system_scence_promot',
+        layout: false,
+        name: 'ef_system_scence_promot',
+        component: './app/ef_system_scence_promot/ef_system_scence_promot_index',
+      },
     ]
   },
   {
