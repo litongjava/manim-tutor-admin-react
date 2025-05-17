@@ -6,9 +6,45 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
     "dataIndex": "title",
     "valueType": "text"
   },
+
   {
     "title": "final_request_json",
     "dataIndex": "final_request_json",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "error_code",
+    "dataIndex": "error_code",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "std_out",
+    "dataIndex": "std_out",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "prompt",
+    "dataIndex": "prompt",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "std_err",
+    "dataIndex": "std_err",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "fixed_code",
+    "dataIndex": "fixed_code",
     "valueType": "textarea",
     ellipsis:true,
     copyable: true,
