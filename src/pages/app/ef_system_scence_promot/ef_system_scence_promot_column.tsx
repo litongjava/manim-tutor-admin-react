@@ -9,7 +9,7 @@ export const ef_system_scence_promot_columns = (): ProColumns<any>[] => [
   {
     "title": "prompt",
     "dataIndex": "prompt",
-    "valueType": "text",
+    "valueType": "textarea",
     ellipsis:true,
     copyable: true,
   },
