@@ -41,6 +41,12 @@ export default [
         name: 'ef_system_scence_promot',
         component: './app/ef_system_scence_promot/ef_system_scence_promot_index',
       },
+      {
+        path: 'ef_avoid_erroneous_prompt',
+        layout: false,
+        name: 'ef_avoid_erroneous_prompt',
+        component: './app/ef_generate_code_avoid_error_prompt/ef_generate_code_avoid_error_prompt_index',
+      },
     ]
   },
   {
