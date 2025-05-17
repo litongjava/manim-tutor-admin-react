@@ -2,6 +2,11 @@ import {ProColumns} from '@ant-design/pro-components';
 
 export const ef_system_scence_promot_columns = (): ProColumns<any>[] => [
   {
+    "title": "order num",
+    "dataIndex": "order_num",
+    "valueType": "text"
+  },
+  {
     "title": "title",
     "dataIndex": "title",
     "valueType": "text"
