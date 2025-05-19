@@ -6,7 +6,11 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
     "dataIndex": "title",
     "valueType": "text"
   },
-
+  {
+    "title": "sence",
+    "dataIndex": "sence",
+    "valueType": "text"
+  },
   {
     "title": "final_request_json",
     "dataIndex": "final_request_json",
@@ -45,6 +49,13 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
   {
     "title": "prompt",
     "dataIndex": "prompt",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
+    "title": "script",
+    "dataIndex": "script",
     "valueType": "textarea",
     ellipsis:true,
     copyable: true,

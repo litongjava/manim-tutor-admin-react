@@ -31,6 +31,13 @@ export const ef_manin_sence_code_columns = (): ProColumns<any>[] => [
     copyable: true,
   },
   {
+    "title": "script",
+    "dataIndex": "script",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
     "title": "std_out",
     "dataIndex": "std_out",
     "valueType": "textarea",
