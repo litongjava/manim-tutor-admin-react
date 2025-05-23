@@ -4,7 +4,9 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
   {
     "title": "title",
     "dataIndex": "title",
-    "valueType": "text"
+    "valueType": "text",
+    ellipsis:true,
+    copyable: true,
   },
   {
     "title": "sence",
