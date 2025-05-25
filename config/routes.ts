@@ -47,6 +47,18 @@ export default [
         name: 'ef_avoid_erroneous_prompt',
         component: './app/ef_generate_code_avoid_error_prompt/ef_generate_code_avoid_error_prompt_index',
       },
+      {
+        path: 'ef_generated_video_better',
+        layout: false,
+        name: 'ef_generated_video_better',
+        component: './app/ef_generated_video_better/ef_generated_video_better_index',
+      },
+      {
+        path: 'ef_config',
+        layout: false,
+        name: 'ef_config',
+        component: './app/ef_config/ef_config_index',
+      },
     ]
   },
   {
