@@ -24,6 +24,12 @@ export default [
         component: './Welcome',
       },
       {
+        path: 'ef_generated_video',
+        layout: false,
+        name: 'ef_generated_video',
+        component: './app/ef_generated_video/ef_generated_video_index',
+      },
+      {
         path: 'ef_manin_sence_code',
         layout: false,
         name: 'ef_manin_sence_code',
