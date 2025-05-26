@@ -1,4 +1,4 @@
-import ApiTableLong from '@/components/common/ApiTableLong';
+import ApiTable from '@/components/common/ApiTable';
 import { ef_llm_usage_columns } from '@/pages/app/ef_llm_usage/ef_llm_usage_column';
 
 export default () => {
@@ -26,7 +26,7 @@ export default () => {
     };
   };
   return (
-    <ApiTableLong
+    <ApiTable
       from={from}
       columns={ef_llm_usage_columns()}
       beforePageRequest={beforePageRequest}

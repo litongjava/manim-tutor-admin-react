@@ -1,4 +1,4 @@
-import ApiTableLong from '@/components/common/ApiTableLong';
+import ApiTable from '@/components/common/ApiTable';
 import { ef_generate_code_avoid_error_prompt_columns } from '@/pages/app/ef_generate_code_avoid_error_prompt/ef_generate_code_avoid_error_prompt_column';
 
 export default () => {
@@ -26,7 +26,7 @@ export default () => {
     };
   };
   return (
-    <ApiTableLong
+    <ApiTable
       from={from}
       columns={ef_generate_code_avoid_error_prompt_columns()}
       beforePageRequest={beforePageRequest}

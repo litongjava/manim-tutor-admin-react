@@ -1,4 +1,4 @@
-import ApiTableLong from '@/components/common/ApiTableLong';
+import ApiTable from '@/components/common/ApiTable';
 import { ef_system_scence_promot_columns } from '@/pages/app/ef_system_scence_promot/ef_system_scence_promot_column';
 
 export default () => {
@@ -26,7 +26,7 @@ export default () => {
     };
   };
   return (
-    <ApiTableLong
+    <ApiTable
       from={from}
       columns={ef_system_scence_promot_columns()}
       beforePageRequest={beforePageRequest}

@@ -1,4 +1,4 @@
-import ApiTableLong from '@/components/common/ApiTableLong';
+import ApiTable from '@/components/common/ApiTable';
 import {ef_generated_video_columns} from "@/pages/app/ef_generated_video/ef_generated_video_column";
 
 export default () => {
@@ -26,7 +26,7 @@ export default () => {
     };
   };
   return (
-    <ApiTableLong
+    <ApiTable
       from={from}
       columns={ef_generated_video_columns()}
       beforePageRequest={beforePageRequest}

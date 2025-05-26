@@ -1,11 +1,9 @@
-import ApiTableLong from '@/components/common/ApiTableLong';
+import ApiTable from '@/components/common/ApiTable';
 import { app_user2_columns } from '@/pages/app/app_user2/app_user2_column';
 
 export default () => {
   const from = 'app_users2';
   const beforePageRequest = (params: any, isRecoveryMode?: boolean) => {
-    params.idType = 'long';
-
     if (isRecoveryMode) {
       params.deleted = 1;
     } else {
@@ -23,11 +21,10 @@ export default () => {
   const beforeCreateRequest = (formValues: any) => {
     return {
       ...formValues,
-      idType: 'long',
     };
   };
   return (
-    <ApiTableLong
+    <ApiTable
       from={from}
       columns={app_user2_columns()}
       beforePageRequest={beforePageRequest}
