@@ -24,6 +24,12 @@ export default [
         component: './Welcome',
       },
       {
+        path: 'app_user2',
+        layout: true,
+        name: 'app_user2',
+        component: './app/app_user2/app_user2_index',
+      },
+      {
         path: 'ef_generated_video',
         layout: false,
         name: 'ef_generated_video',
