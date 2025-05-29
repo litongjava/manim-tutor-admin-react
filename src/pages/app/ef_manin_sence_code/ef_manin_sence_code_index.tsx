@@ -16,6 +16,7 @@ export default () => {
     params.update_time_type = 'string[]';
     params.update_time_op = 'bt';
     params.topicOp = 'ct';
+    params.codeOp = 'ct';
     return params;
   };
 
