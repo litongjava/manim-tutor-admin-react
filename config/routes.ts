@@ -30,6 +30,12 @@ export default [
         component: './app/app_user2/app_user2_index',
       },
       {
+        path: 'ef_user_blocked',
+        layout: false,
+        name: 'ef_user_blocked',
+        component: './app/ef_user_blocked/ef_user_blocked_index',
+      },
+      {
         path: 'ef_ugvideo',
         layout: false,
         name: 'ef_ugvideo',
