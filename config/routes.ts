@@ -60,10 +60,10 @@ export default [
         component: './app/ef_llm_usage/ef_llm_usage_index',
       },
       {
-        path: 'ef_system_scence_promot',
+        path: 'ef_system_scence_prompt',
         layout: false,
-        name: 'ef_system_scence_promot',
-        component: './app/ef_system_scence_promot/ef_system_scence_promot_index',
+        name: 'ef_system_scence_prompt',
+        component: './app/ef_system_scence_prompt/ef_system_scence_prompt_index',
       },
       {
         path: 'ef_avoid_erroneous_prompt',

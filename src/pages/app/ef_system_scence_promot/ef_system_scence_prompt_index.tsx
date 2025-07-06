@@ -2,7 +2,7 @@ import ApiTable from '@/components/common/ApiTable';
 import { ef_system_scence_promot_columns } from '@/pages/app/ef_system_scence_promot/ef_system_scence_promot_column';
 
 export default () => {
-  const from = 'ef_system_scence_promot';
+  const from = 'ef_system_scence_prompt';
   const beforePageRequest = (params: any, isRecoveryMode?: boolean) => {
     params.idType = 'long';
 
