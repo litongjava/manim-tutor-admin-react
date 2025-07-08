@@ -63,7 +63,7 @@ export default [
         path: 'ef_system_scence_prompt',
         layout: false,
         name: 'ef_system_scence_prompt',
-        component: './app/ef_system_scence_prompt/ef_system_scence_prompt_index',
+        component: './app/ef_system_scence_prompt/',
       },
       {
         path: 'ef_avoid_erroneous_prompt',
