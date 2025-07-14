@@ -1,6 +1,6 @@
 import {ProColumns} from '@ant-design/pro-components';
 
-export const ef_system_scence_promot_columns = (): ProColumns<any>[] => [
+export const ef_system_scence_prompt_columns = (): ProColumns<any>[] => [
   {
     "title": "order num",
     "dataIndex": "order_num",

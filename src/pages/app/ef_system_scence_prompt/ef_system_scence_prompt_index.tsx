@@ -1,5 +1,5 @@
 import ApiTable from '@/components/common/ApiTable';
-import { ef_system_scence_promot_columns } from '@/pages/app/ef_system_scence_promot/ef_system_scence_promot_column';
+import { ef_system_scence_prompt_columns } from '@/pages/app/ef_system_scence_prompt/ef_system_scence_prompt_column';
 
 export default () => {
   const from = 'ef_system_scence_prompt';
@@ -28,7 +28,7 @@ export default () => {
   return (
     <ApiTable
       from={from}
-      columns={ef_system_scence_promot_columns()}
+      columns={ef_system_scence_prompt_columns()}
       beforePageRequest={beforePageRequest}
       beforeCreateRequest={beforeCreateRequest}
     />
