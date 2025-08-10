@@ -60,6 +60,13 @@ const DataTable: React.FC<DataTableProp> = ({
         actionRef={actionRef}
         request={pageRequest}
         rowKey="id"
+        scroll={{x: "max-content"}}
+        options={{
+          show: true,
+          density: true,
+          fullScreen: true,
+          setting: true,
+        }}
         search={{
           labelWidth: 'auto',
           defaultCollapsed: true,
