@@ -1,4 +1,4 @@
-import {ArrowsAltOutlined, BorderOutlined, ExpandAltOutlined, VerticalLeftOutlined} from '@ant-design/icons';
+import { ArrowsAltOutlined, BorderOutlined, VerticalLeftOutlined } from '@ant-design/icons';
 import {
   ActionType,
   FooterToolbar,
