@@ -1,3 +1,4 @@
+import TooltipButton from '@/components/common/TooltipButton';
 import { ArrowsAltOutlined, BorderOutlined, VerticalLeftOutlined } from '@ant-design/icons';
 import {
   ActionType,
@@ -7,7 +8,7 @@ import {
   ProDescriptionsItemProps,
   ProTable,
 } from '@ant-design/pro-components';
-import { Button, Drawer, Tooltip } from 'antd';
+import { Button, Drawer } from 'antd';
 import { SortOrder } from 'antd/lib/table/interface';
 import React, { useState } from 'react';
 
@@ -46,7 +47,6 @@ const DataTable: React.FC<DataTableProp> = ({
   toolBarRender,
 }) => {
   const [selectedRowsState, setSelectedRows] = useState<any[]>([]);
-
   const [scrollMode, setScrollMode] = useState<boolean>(false);
   const [showBorder, setShowBorder] = useState<boolean>(false);
   const [showGhost, setShowGhost] = useState<boolean>(false);
@@ -64,21 +64,30 @@ const DataTable: React.FC<DataTableProp> = ({
   };
 
   let showGhostButton = (
-    <Tooltip title="Ghost">
-      <Button icon={<ArrowsAltOutlined />} type="text" onClick={handleGhostChange}></Button>
-    </Tooltip>
+    <TooltipButton
+      icon={<ArrowsAltOutlined />}
+      type="text"
+      onClick={handleGhostChange}
+      tooltipTitle="Ghost Mode"
+    />
   );
 
   let showScrollButton = (
-    <Tooltip title="Scroll">
-      <Button icon={<VerticalLeftOutlined />} type="text" onClick={handleScrollChange}></Button>
-    </Tooltip>
+    <TooltipButton
+      icon={<VerticalLeftOutlined />}
+      type="text"
+      onClick={handleScrollChange}
+      tooltipTitle="Toggle Scroll Mode"
+    />
   );
 
   let showBorderButton = (
-    <Tooltip title="Border">
-      <Button icon={<BorderOutlined />} type="text" onClick={handleBorderChange}></Button>
-    </Tooltip>
+    <TooltipButton
+      icon={<BorderOutlined />}
+      type="text"
+      onClick={handleBorderChange}
+      tooltipTitle="Show Border"
+    />
   );
 
   let onClickBatchRequest = async () => {
@@ -117,8 +126,13 @@ const DataTable: React.FC<DataTableProp> = ({
           labelWidth: 'auto',
           defaultCollapsed: true,
         }}
-        // form={{initialValues: {pageSize: 10}}}
-        pagination={{ showSizeChanger: true }}
+        pagination={{
+          defaultPageSize: 15,
+          showSizeChanger: true,
+          pageSizeOptions: [
+            5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 96, 100,
+          ],
+        }}
         toolBarRender={() => [
           ...toolBarRender(),
           showGhostButton,
@@ -152,7 +166,8 @@ const DataTable: React.FC<DataTableProp> = ({
           setCurrentRow(undefined);
           setShowDetail(false);
         }}
-        closable={true}
+        destroyOnClose={true}
+        title="Details"
       >
         {currentRow?.id && (
           <ProDescriptions<any>

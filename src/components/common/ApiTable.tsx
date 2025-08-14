@@ -39,8 +39,6 @@ const ApiTable: React.FC<JtsDataTableLongProps> = ({
   }
 
   const dataTableBeforeCreateRequest = (params: any) => {
-    //params.id_type = "long";
-
     if (containsUpload) {
       params.files = fileList.map((file: any) => {
         return {

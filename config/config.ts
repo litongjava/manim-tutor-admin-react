@@ -171,6 +171,8 @@ let config = {
   },
   esbuildMinifyIIFE: true,
   requestRecord: {},
+  mako: {},
+  devtool: 'source-map',
 }
 // @ts-ignore
 export default defineConfig(config);
