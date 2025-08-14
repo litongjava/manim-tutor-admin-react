@@ -40,7 +40,7 @@ export const app_user2_columns = (): ProColumns<any>[] => [
   {
     title: 'avatar',
     dataIndex: 'avatar',
-    valueType: 'text',
+    valueType: 'image',
     ellipsis: true,
     copyable: true,
   },
