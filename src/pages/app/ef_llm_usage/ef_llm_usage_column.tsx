@@ -24,16 +24,9 @@ export const ef_llm_usage_columns = (): ProColumns<any>[] => [
     valueType: 'text',
   },
   {
-    title: 'provider',
+    title: 'platform',
     dataIndex: 'provider',
     valueType: 'text',
-  },
-  {
-    title: 'api_key',
-    dataIndex: 'api_key',
-    valueType: 'text',
-    ellipsis: true,
-    copyable: true,
   },
   {
     title: 'model',
