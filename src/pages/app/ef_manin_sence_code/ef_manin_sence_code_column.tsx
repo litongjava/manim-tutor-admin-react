@@ -14,8 +14,8 @@ export const ef_manin_sence_code_columns = (): ProColumns<any>[] => [
     copyable: true,
   },
   {
-    "title": "sence",
-    "dataIndex": "sence",
+    "title": "scene",
+    "dataIndex": "scene",
     "valueType": "text"
   },
   {
@@ -55,6 +55,12 @@ export const ef_manin_sence_code_columns = (): ProColumns<any>[] => [
   {
     "title": "uri",
     "dataIndex": "uri",
+    "valueType": "text",
+    copyable: true,
+  },
+  {
+    "title": "image_url",
+    "dataIndex": "image_url",
     "valueType": "text",
     copyable: true,
   },

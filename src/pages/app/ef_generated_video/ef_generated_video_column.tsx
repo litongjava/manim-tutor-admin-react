@@ -9,6 +9,13 @@ export const ef_generated_video_columns = (): ProColumns<any>[] => [
     copyable: true,
   },
   {
+    "title": "prompt",
+    "dataIndex": "prompt",
+    "valueType": "text",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
     "title": "language",
     "dataIndex": "language",
     "valueType": "text"

@@ -1,8 +1,9 @@
 import ApiTable from '@/components/common/ApiTable';
 import { ef_manin_sence_code_columns } from '@/pages/app/ef_manin_sence_code/ef_manin_sence_code_column';
+import {ef_manin_image_code_columns} from "@/pages/app/ef_manin_image_code/ef_manin_image_code_column";
 
 export default () => {
-  const from = 'ef_manin_scene_code';
+  const from = 'ef_manin_image_code';
   const beforePageRequest = (params: any, isRecoveryMode?: boolean) => {
     params.idType = 'long';
 
@@ -29,7 +30,7 @@ export default () => {
   return (
     <ApiTable
       from={from}
-      columns={ef_manin_sence_code_columns()}
+      columns={ef_manin_image_code_columns()}
       beforePageRequest={beforePageRequest}
       beforeCreateRequest={beforeCreateRequest}
     />

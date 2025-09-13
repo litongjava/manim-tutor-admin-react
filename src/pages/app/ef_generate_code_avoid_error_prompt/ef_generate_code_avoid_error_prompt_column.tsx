@@ -9,8 +9,8 @@ export const ef_generate_code_avoid_error_prompt_columns = (): ProColumns<any>[]
     copyable: true,
   },
   {
-    "title": "sence",
-    "dataIndex": "sence",
+    "title": "scene",
+    "dataIndex": "scene",
     "valueType": "text"
   },
   {

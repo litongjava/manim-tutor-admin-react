@@ -54,6 +54,12 @@ export default [
         component: './app/ef_manin_sence_code/ef_manin_sence_code_index',
       },
       {
+        path: 'ef_manin_image_code',
+        layout: false,
+        name: 'ef_manin_image_code',
+        component: './app/ef_manin_image_code/ef_manin_image_code_index',
+      },
+      {
         path: 'ef_llm_usage',
         layout: false,
         name: 'ef_llm_usage',
@@ -65,6 +71,7 @@ export default [
         name: 'ef_system_scence_prompt',
         component: './app/ef_system_scence_prompt/ef_system_scence_prompt_index',
       },
+
       {
         path: 'ef_avoid_erroneous_prompt',
         layout: false,
