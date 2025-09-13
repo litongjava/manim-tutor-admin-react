@@ -67,6 +67,11 @@ export const ef_ugvideo_columns = (): ProColumns<any>[] => [
     valueType: 'text',
   },
   {
+    title: 'group_id',
+    dataIndex: 'group_id',
+    valueType: 'text',
+  },
+  {
     title: 'update_time',
     dataIndex: 'update_time',
     valueType: 'dateTime',
