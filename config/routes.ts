@@ -48,6 +48,12 @@ export default [
         component: './app/ef_generated_video/ef_generated_video_index',
       },
       {
+        path: 'ef_generate_image',
+        layout: false,
+        name: 'ef_generate_image',
+        component: './app/ef_generate_image/ef_generate_image_index',
+      },
+      {
         path: 'ef_manin_sence_code',
         layout: false,
         name: 'ef_manin_sence_code',
