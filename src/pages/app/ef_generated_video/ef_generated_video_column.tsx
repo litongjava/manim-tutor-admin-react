@@ -21,6 +21,13 @@ export const ef_generated_video_columns = (): ProColumns<any>[] => [
     "valueType": "text"
   },
   {
+    "title": "python_code",
+    "dataIndex": "python_code",
+    "valueType": "textarea",
+    ellipsis:true,
+    copyable: true,
+  },
+  {
     "title": "voice_provider",
     "dataIndex": "voice_provider",
     "valueType": "text"
