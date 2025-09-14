@@ -1,4 +1,6 @@
-﻿/**
+﻿import {llm_generate_image_columns} from "@/pages/app/llm_generate_image/llm_generate_image_column";
+
+/**
  * @name umi 的路由配置
  * @description 只支持 path,component,routes,redirect,wrappers,name,icon 的配置
  * @param path  path 只支持两种占位符配置，第一种是动态参数 :id 的形式，第二种是 * 通配符，通配符只能出现路由字符串的最后。
@@ -53,6 +55,13 @@ export default [
         name: 'ef_generate_image',
         component: './app/ef_generate_image/ef_generate_image_index',
       },
+      {
+        path: 'llm_generate_image',
+        layout: false,
+        name: 'llm_generate_image',
+        component: './app/llm_generate_image/llm_generate_image_index',
+      },
+
       {
         path: 'ef_manin_sence_code',
         layout: false,
