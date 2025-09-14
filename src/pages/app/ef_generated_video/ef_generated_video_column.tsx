@@ -52,9 +52,7 @@ export const ef_generated_video_columns = (): ProColumns<any>[] => [
   {
     "title": "cover_url",
     "dataIndex": "cover_url",
-    "valueType": "text",
-    ellipsis:true,
-    copyable: true,
+    "valueType": "image",
   },
   {
     "title": "elapsed",
